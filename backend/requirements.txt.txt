@@ -1,0 +1,4 @@
+django
+djangorestframework
+joblib
+django-cors-headers
