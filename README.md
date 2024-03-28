@@ -1,9 +1,9 @@
-# Email is a spam or a ham
+# Spam or Ham Classifier: Proof of Concept
 
 ## About the project
-The project has a custom machine learning model that I was able to create. This project is a POC. The project has online learning capability aswell. 
-The project classifies whether the sent email is a spam or a ham. The project is using a similar model of Gmail and Yahoo. Though
-the training is done at a really small scale.
+This project features a custom machine learning model designed to classify emails as either spam or ham (non-spam). Serving as a proof of concept, it showcases the capability to train the model online, allowing for continuous improvement and adaptation to evolving email patterns.
+
+The classifier operates on a small-scale training dataset, yet mirrors the functionality of widely-used email providers such as Gmail and Yahoo. Through this project, explore the rudiments of email classification and delve into the potential of online learning in refining predictive accuracy over time.
 
 ## Technologies used
 
