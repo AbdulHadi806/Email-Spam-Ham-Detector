@@ -7,10 +7,14 @@ def custom_predict(X, threshold, model):
     probs = model.predict_proba(X) 
     return (probs[:, 1] > threshold).astype(int)
 
-def make_prediction(subject):
-    emailSubject = subject
+def get_pipeline():
     path = "my-model/models"
     pipeline = joblib.load(f"{path}/pipeline.joblib")
+    return pipeline
+
+def make_prediction(subject):
+    emailSubject = subject
+    pipeline = get_pipeline()
     prediction = custom_predict([emailSubject], 0.6, pipeline)
     return prediction
 
@@ -29,3 +33,15 @@ def get_created_mails(request):
     mails = Mail.objects.all()
     mail_data = [{'id': mail.id, 'subject': mail.subject, 'isHam': mail.isHam} for mail in mails]
     return JsonResponse({'mails': mail_data})
+
+
+
+@api_view(['POST'])
+def retrain_model(request):
+    id = request.data
+    print(id, ':::id::::')
+    mails = Mail.objects.filter(id=id)
+    print(mails[0], 'mails')
+    # pipeline = get_pipeline()
+    # pipeline.partial_fit(mails)
+    return JsonResponse({'mails': "mail_data"})
