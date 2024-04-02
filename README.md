@@ -67,3 +67,6 @@ Follow these steps to run the project locally:
     ```
 
 Now you should be able to access the project locally. 
+
+### About Abdul Haadi
+Abdul Haadi is an entrepreneur investing in his skills and education. Abdul Haadi is currently learning Machine learning and he works on Mern, and Django projects professionally, he loves using chatbots and he knows how to create awesome prompts. He is also the CEO of a small firm that will one day compete with SpaceX, Google, NASA, and other tech giants. Abdul Haadi provides free consultation **abdul.806@yahoo.com** and does side gigs.
